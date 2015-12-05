@@ -1,0 +1,20 @@
+* Emacs 台灣社群
+
+討論及分享 Emacs 相關技巧外加聊天打屁。
+
+雖然說是台灣社群不過希望不要有什麼國族觀念，從哪裡來的都歡迎，謝謝 ˊ・ω・ˋ 。
+
+** 聯繫管道
+
+- IRC: #emacs.tw@irc.freenode.net
+- Telegram 群組聊天室: https://telegram.me/joinchat/CJbTIAM49wJH0qb3U-TWwg
+
+** 相關連結
+
+- Facebook 社團: https://www.facebook.com/groups/emacs.taiwan/
+- Vim Taiwan @ GitHub - https://github.com/emacs-tw
+- Twitter - https://twitter.com/EmacsTW
+ 
+----
+
+Copyleft (ɔ) 2015 Emacs Taiwan
