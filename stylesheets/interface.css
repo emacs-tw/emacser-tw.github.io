@@ -26,6 +26,7 @@ footer {
 #mode-line {
     background-color: #87D7AF;
     color:#005f5f;
+    white-space: nowrap;
 }
 
 .gutter, .code {
