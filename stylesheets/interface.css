@@ -1,0 +1,25 @@
+* {
+    margin:0;
+}
+body {
+  background-image: url('../images/empty.png');
+  background-repeat: repeat-x;
+}
+
+.lnr {
+    background-color: #4e4e4e;
+    color:#b2b2b2;
+
+}
+
+footer {
+    position: absolute;
+    bottom:0;
+    width:100%;
+    
+}
+
+#mode-line {
+    background-color: #87D7AF;
+    color:#005f5f;
+}
