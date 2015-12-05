@@ -6,6 +6,7 @@ body {
   background-image: url('../images/empty.png');
   background-repeat: repeat-x;
   background-position: fixed;
+  min-width:900px;
 }
 
 .gutter {
@@ -14,6 +15,10 @@ body {
     margin-right: 0.5em;
     padding-left: 0.5em;
 
+}
+
+.code {
+    width:800px;
 }
 
 footer {
