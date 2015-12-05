@@ -5,8 +5,13 @@
 body {
   background-image: url('../images/empty.png');
   background-repeat: repeat-x;
-  background-position: fixed;
+  background-attachment: fixed;
+  
   min-width:900px;
+}
+
+#toolbar {
+    position:fixed;
 }
 
 .gutter {
