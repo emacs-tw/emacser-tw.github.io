@@ -46,3 +46,14 @@ footer {
 .gutter, .code {
     float:left;
 }
+
+@keyframes blink {50% { opacity: 0.0; }}
+@-webkit-keyframes blink {50% { opacity: 0.0; }}
+@-moz-keyframes blink {50% { opacity: 0.0; }}
+
+
+.cursor {
+    animation: blink 1s step-end infinite;
+    -webkit-animation: blink 1s step-end infinite;
+    -moz-animation: blink 1s step-end infinite;
+}
