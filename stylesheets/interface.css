@@ -1,19 +1,23 @@
 * {
     margin:0;
+    font-family:"Source Code Pro",Consolas,Monaco,Menlo,Consolas,monospace;
 }
 body {
   background-image: url('../images/empty.png');
   background-repeat: repeat-x;
+  background-position: fixed;
 }
 
-.lnr {
+.gutter {
     background-color: #4e4e4e;
     color:#b2b2b2;
+    margin-right: 0.5em;
+    padding-left: 0.5em;
 
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom:0;
     width:100%;
     
@@ -22,4 +26,8 @@ footer {
 #mode-line {
     background-color: #87D7AF;
     color:#005f5f;
+}
+
+.gutter, .code {
+    float:left;
 }
