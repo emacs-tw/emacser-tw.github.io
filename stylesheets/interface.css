@@ -28,6 +28,9 @@ body {
     
 }
 
+.line {
+    height:22.4px;
+}
 footer {
     position: fixed;
     bottom:0;
