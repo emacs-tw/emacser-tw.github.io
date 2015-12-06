@@ -3,15 +3,16 @@
     font-family:"Source Code Pro",Consolas,Monaco,Menlo,Consolas,monospace;
 }
 body {
-  background-image: url('../images/empty.png');
-  background-repeat: repeat-x;
-  background-attachment: fixed;
-  
   min-width:900px;
 }
 
 #toolbar {
     position:fixed;
+    background-image: url('../images/empty.png');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    width:100%;
+    
 }
 
 .gutter {
@@ -46,6 +47,8 @@ footer {
 
 .gutter, .code {
     float:left;
+    margin-top:72px;
+
 }
 
 @keyframes blink {50% { opacity: 0.0; }}
