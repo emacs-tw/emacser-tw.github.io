@@ -24,6 +24,7 @@ body {
 
 .code {
     width:800px;
+    
 }
 
 footer {
@@ -56,4 +57,8 @@ footer {
     animation: blink 1s step-end infinite;
     -webkit-animation: blink 1s step-end infinite;
     -moz-animation: blink 1s step-end infinite;
+}
+
+#main {
+    margin-bottom:5em;
 }

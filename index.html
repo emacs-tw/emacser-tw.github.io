@@ -21,11 +21,11 @@
   <body>
     <img id="toolbar" src="images/toolbar.png">
     <img src="images/toolbar.png"> <!-- <- this is a dirty workaround, though I think nobody would want to fix it -->
-    <tr>
-      <table>
+      <table id="main">
         <tbody>
-          <td class="gutter">
-            <pre>
+          <tr>
+            <td class="gutter">
+              <pre>
 <span class="line"> 1 </span>
 <span class="line"> 2 </span>
 <span class="line"> 3 </span>
@@ -83,8 +83,10 @@
 
 </pre>
           </td>
-    </tr>
-    
+          </tr>
+        </tbody>
+      </table>
+
 
     <footer>
       <div id="mode-line">-UUU:--- <span style="font-weight:bold;color:#111;">emacs-tw.org</span>   All/2.7k(21,24) Git:master (Org) tw(49) --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
