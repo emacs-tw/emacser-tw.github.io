@@ -25,8 +25,56 @@
 
      ga('create', 'UA-58474364-2', 'auto');
      ga('send', 'pageview');
+     // 你不該往下看
+     var KEYS = []
+     var MB = null
+     var TIMEOUT_ID = null
+     function showMsgInMinibuffer (msg, duration) {
+       MB.textContent = msg
+       KEYS = []
+       if (duration !== -1) {
+         clearTimeout(TIMEOUT_ID)
+         TIMEOUT_ID = setTimeout(function () {
+           document.getElementById('minibuffer').textContent = "Copyleft (ɔ) 2015-" + new Date().getFullYear() + " Emacs Taiwan"
+         }, duration)
+       }
+     }
+     function handlePrefix () {
+       if (KEYS[0] === "C-x") {
+         switch (KEYS[1]) {
+           case "C-s": return showMsgInMinibuffer("唉呀呀，被你發現了這個呢！", 3000)
+           case "C-c": return showMsgInMinibuffer("哇，你竟然知道該怎麼離開 Emacs 耶！好棒棒！" , 3000)
+           case "C-f": return showMsgInMinibuffer("好啦不要再試了，這裡開檔是開不出什麼鳥的啦。" , 3000)
+           case "C-q": return showMsgInMinibuffer("哇你連這個都知道啊，但網頁本來就唯獨的啦。" , 3000)
+           case "C-e": return showMsgInMinibuffer("你在 eval 三小啦。" , 3000)
+           default: return showMsgInMinibuffer(MB.textContent = KEYS.join(" ") + " is undefined", 3000)
+         }
+         return showMsgInMinibuffer(3000)
+       }
+     }
+     window.addEventListener("keypress", function (e) {
+       if (e.ctrlKey) {
+         e.preventDefault()
+         if (e.key === 'h') {
+           showMsgInMinibuffer("Emacs 遇到困難可以按 C-h ，人生遇到困難可以按什麼啦啦啦", 3000)
+         } else if (e.key === 'g') {
+           showMsgInMinibuffer("就算你不按 C-g 這個網頁也什麼都不會做的啦。", 3000)
+         }
+         if (KEYS.length > 0) {
+           KEYS.push("C-" + e.key)
+           handlePrefix()
+         } else {
+           if (e.key === 'x') {
+             KEYS.push("C-x")
+             MB.textContent = "C-x-"
+             return
+           }
+         }
+       }
+     });
      window.onload = function () {
-       document.getElementById('minibuffer').textContent = "Copyleft (ɔ) 2015-" + new Date().getFullYear() + " Emacs Taiwan"
+       MB = document.getElementById('minibuffer')
+       showMsgInMinibuffer('', 0)
      }
     </script>
   </head>
