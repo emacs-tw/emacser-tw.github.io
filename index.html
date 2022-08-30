@@ -35,7 +35,8 @@
        if (duration !== -1) {
          clearTimeout(TIMEOUT_ID)
          TIMEOUT_ID = setTimeout(function () {
-           document.getElementById('minibuffer').textContent = "Copyleft © 2015-" + new Date().getFullYear() + " Emacs Taiwan"
+           let copyleftImage = "<img width=\"18\" height=\"18\" src=\"images/copyleft.svg\">";
+           document.getElementById('minibuffer').innerHTML = "Copyleft " + copyleftImage + " 2015-" + new Date().getFullYear() + " Emacs Taiwan";
          }, duration)
        }
      }
@@ -155,7 +156,7 @@
 
     <footer>
       <div id="mode-line">-UUU:%%- <span style="font-weight:bold;color:#111;">emacser.tw</span>   All/5.2k(21,64) Git:master (Org) tw(49) --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
-      <div id="minibuffer">Copyleft © 2015 Emacs Taiwan</div>
+      <div id="minibuffer">Copyleft <img width="18" height="18" src="images/copyleft.svg"> 2015 Emacs Taiwan</div>
     </footer>
   </body>
 </html>
